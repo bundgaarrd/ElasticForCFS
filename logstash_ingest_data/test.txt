@@ -1,0 +1,3 @@
+hello from logstash
+this is a test line
+another line here
