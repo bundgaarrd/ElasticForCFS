@@ -435,9 +435,9 @@ Thumbs.db
 # ----------------------
 # Environment variables
 # ----------------------
-.env
-.env.*
-!.env.example
+# .env
+# .env.*
+# !.env.example
 
 # ----------------------
 # Docker
