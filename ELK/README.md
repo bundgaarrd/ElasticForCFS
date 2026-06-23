@@ -1,7 +1,7 @@
 These are some links, that have been followed, setting up this environment
 
 ## Prereqs:
-Make sure that docker and the docker compose plugin is installed. Instructions can be found [here]()
+Make sure that docker and the docker compose plugin is installed. Instructions can be found [here]() <-- insert link
 
 Create docker network before running the compose file. Be sure to run this with super user privileges.
 `sudo docker network create elastic`
