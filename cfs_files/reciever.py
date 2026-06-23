@@ -127,7 +127,7 @@ if __name__ == "__main__":
     print("listening on port 2234. Printing to telemetry.json")
 
  
-    with open("telemetry_dashboard.json", "a", buffering=1) as f: 
+    with open("telemetry.json", "a", buffering=1) as f: 
         while True:
             data, _ = sock.recvfrom(65535)
             packet = decode(data)
