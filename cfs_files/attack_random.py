@@ -9,15 +9,15 @@ random.seed(42)
 time_for_start_program = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
 
 # Configuration
-timer_for_normal_aktør = 0  # Number of hours where data is generated for normal operation
-timer_for_attacker = 1     # Number of hours where data is generated where there is an attacker as well as normal operation
+timer_for_normal_aktør = 8  # Number of hours where data is generated for normal operation
+timer_for_attacker = 2     # Number of hours where data is generated where there is an attacker as well as normal operation
 
 sandsynlighed_for_normal_aktør = 0.5  # The rest is not sending
 
 # Attacker probabilities
-anomaly_start = 0.5
-anomaly_end = 0.5
-sandsynlighed_for_attacks = [1,0,0]  # [dos, lifecycle, storage]
+anomaly_start = 0.01
+anomaly_end = 0.05
+sandsynlighed_for_attacks = [0.33,0.33,0.33]  # [dos, lifecycle, storage]
 
 time_normal_aktør = 3600 * timer_for_normal_aktør
 time_attack_aktør = 3600 * timer_for_attacker
