@@ -1,0 +1,2 @@
+cfs_files/telemetry_radnom.json filter=lfs diff=lfs merge=lfs -text
+cfs_files/telemetry_systematic.json filter=lfs diff=lfs merge=lfs -text
