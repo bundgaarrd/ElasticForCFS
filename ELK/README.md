@@ -4,6 +4,10 @@ This readme follows some of the [Elastic Multi Node Cluster documentation](https
 
 ## Prerequisites:
 - Install Docker and the Docker Compose plugin. Instructions can be found in the [Docker Compose documentation](https://docs.docker.com/desktop/setup/install/linux/ubuntu/)
+- Clone this repository
+```bash
+git clone https://github.com/bundgaarrd/ElasticForCFS.git
+```
 
 Environment variables have to be declared in an environment `.env` file. Make sure that this file is hidden in production environments. This is provided here to make the setup easier and the information is not sensitive.
 
