@@ -1,9 +1,14 @@
 These are some links, that have been followed, setting up this environment
 
-## Prereqs:
-Make sure that docker and the docker compose plugin is installed. Instructions can be found [here]() <-- insert link
+This readme follows some of the [Elastic Multi Node Cluster documentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-docker-compose)
 
-Create docker network before running the compose file. Be sure to run this with super user privileges.
-`sudo docker network create elastic`
+## Prerequisites:
+- Install Docker and the Docker Compose plugin. Instructions can be found in the [Docker Compose documentation](https://docs.docker.com/desktop/setup/install/linux/ubuntu/)
 
-1. [Elastic Search single node cluster in docker ](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-docker-basic) 
+Environment variables have to be declared in an environment `.env` file. Make sure that this file is hidden in production environments. This is provided here to make the setup easier and the information is not sensitive.
+
+## Run the setup
+Navigate to the ELK folder and run the following command to start the containers in detached mode, so that they run in the background.
+```bash
+sudo docker compose up -d
+```

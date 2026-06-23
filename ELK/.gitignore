@@ -9,7 +9,9 @@
 *.user
 *.userosscache
 *.sln.docstates
-*.env
+# The following is UNSAFE! For production environments, make sure this file is not tracked with Git.
+# This is only made available since this project is a PoC and it doesn't contain that sensitive information. 
+# *.env
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
