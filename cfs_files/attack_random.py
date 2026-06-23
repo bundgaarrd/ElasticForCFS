@@ -39,7 +39,7 @@ def sendCMDUTIL(pktid, cmdcode, anomaly, kind_of_anomaly, ekstra=None):
     print(f"Attack life: {attack_life_count}")
     print(f"Attack storage exhuastion: {attack_storage_count}")
     print(f"Time: {timestamp}")
-    with open(f"log.csv{time_for_start_program}", "a", newline="") as f:
+    with open(f"log{time_for_start_program}.csv", "a", newline="") as f:
         writer = csv.writer(f)
         writer.writerow([timestamp, pktid, cmdcode, anomaly, kind_of_anomaly, f"Attack dos count: {attack_dos_count}", f"Attack lifecycle: {attack_life_count}"])
 

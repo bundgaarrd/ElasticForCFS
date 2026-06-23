@@ -54,7 +54,7 @@ def send_cmd(pktid, cmdcode, anomaly, kind, extra=None):
     subprocess.run(cmd)
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
     print(f"DoS: {dos_count}  Lifecycle: {life_count}  Storage: {storage_count}  Time: {timestamp}")
-    with open(f"log.csv{start_time_str}", "a", newline="") as f:
+    with open(f"log{start_time_str}.csv", "a", newline="") as f:
         csv.writer(f).writerow([timestamp, pktid, cmdcode, anomaly, kind,
                                 f"dos count: {dos_count}",
                                 f"lifecycle count: {life_count}",

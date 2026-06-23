@@ -14,4 +14,4 @@ Scripts for sending command traffic to a running cFS instance and capturing its 
 2. In another terminal, run a traffic generator:
    python3 attack_systematic.py or attack_random.py
 
-Each command sent is logged to `log.csv<start-time>` with anomaly labels. Settings (durations, probabilities) are at the top of each script.
+Each command sent is logged to `log<start-time>.csv` with anomaly labels. Settings (durations, probabilities) are at the top of each script.
